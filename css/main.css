@@ -770,6 +770,11 @@
   overflow: hidden;
 }
 
+.product__photo {
+  width: 100%;
+  display: block;
+}
+
 .product__overlay {
   position: absolute;
   bottom: 0;
