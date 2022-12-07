@@ -3,13 +3,22 @@
 }
 
 .features__list {
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0;
-
     list-style: none;
+    @include mq(tablet) {
+            
+        }
+    
+    @include mq(desktop) {
+            display: flex;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-left: 0;
+        }
+    
+
+    
 }
+
 
 .features__item:not(:last-child) {
     margin-right: 30px;
@@ -33,9 +42,13 @@
     line-height: 1.14;
     margin-top: 0;
     margin-bottom: 10;
+  
 }
 
 .features__text {
+    @include mq(tablet) {}
+    
+    @include mq(desktop) {}
     margin-top: 0;
     margin-bottom: 0;
 }

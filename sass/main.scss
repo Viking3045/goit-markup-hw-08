@@ -1,8 +1,11 @@
-    // base
+@import "./utils/mixins";
+   // base
 @import "./base/variables";
 @import "./base/base";
     // utils
+
 @import "./utils/visually-hidden";
+
     // components
 @import "./components/title";
 @import "./components/button";
