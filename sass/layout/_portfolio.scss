@@ -4,31 +4,32 @@
     margin-right: 130px;
     list-style: none;
     padding-left: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     margin-top: 0;
     @include mq(tablet){
     justify-content: center;
+    margin-bottom: 30px;
+    margin-right: 0;
     }
     @include mq(desktop){
-
+    margin-bottom: 50px;    
     }
 }
 
 .nav__item {
-    &:not(last-child){
-      margin-right: 8px; 
+    &:not(:last-child){
+      margin-right:8px; 
     }
+    &:nth-child(3n) {
+       @media screen and (max-width:767.9px) {
+                 margin-right: 0;
+             }
+         }
     
-
-    @include mq(tablet) {}
-        
-    @include mq(desktop) {}
-    
-        &:nth-last-child(-n + 2) {
-            @media screen and (max-width:767.9px) {
-                margin-top: 15px;
+    &:nth-last-child(-n + 2) {
+        @media screen and (max-width:767.9px) {
+            margin-top: 15px;
             }
-    
         }
 }
 
