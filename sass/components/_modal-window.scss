@@ -135,9 +135,7 @@
     &:focus {
             border: 1px solid #2196F3;
         }
-    @include mq(tablet){
-
-    }
+        
     @include mq(desktop){
         width: 448px;
     }
