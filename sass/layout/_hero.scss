@@ -13,12 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    @include mq(tablet){
 
-    }
-    @include mq(desktop){
-        
-    }
 
 }
 
@@ -28,8 +23,14 @@
     color: #fff;
     font-style: 400;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.6;
+
+    
+     @include mq(desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+            }
 }
 .hero__button {
     color: var(--ptimary-white-color);
