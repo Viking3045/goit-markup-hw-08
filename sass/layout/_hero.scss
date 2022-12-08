@@ -13,6 +13,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @include mq(tablet){
+
+    }
+    @include mq(desktop){
+        
+    }
+
 }
 
 .hero__title {

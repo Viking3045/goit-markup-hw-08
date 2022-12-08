@@ -6,11 +6,13 @@
     padding-left: 0;
     margin-bottom: 40px;
     margin-top: 0;
+
     @include mq(tablet){
     justify-content: center;
     margin-bottom: 30px;
     margin-right: 0;
     }
+
     @include mq(desktop){
     margin-bottom: 50px;    
     }
@@ -73,6 +75,13 @@
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+
+    @include mq(tablet){
+
+    }
+    @include mq(desktop){
+
+    }
 }
 
 .product__link {
@@ -81,29 +90,59 @@
 
 .product__item {
     position: relative;
-    width: 370px;
-    margin-right: 30px;
+    width: 450px;
     margin-bottom: 30px;
     padding-bottom: 20px;
+    
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
-
 
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mq(tablet) {
+        width: 354px;
+        margin-right: 30px;
+        height: 404px;
+    }
+    
+    @include mq(desktop) {
+        width: 370px;
+    }
+
 
     &:hover {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
     
     &:nth-child(3n) {
-            margin-right: 0;
+        @include mq(desktop) {
+                margin-right: 0;
+            }
+            
+        }
+    &:nth-child(2n) {
+            @media screen and (min-width:768px) and (max-width:1199.9px) {
+                margin-right: 0;
+            }
+    
         }
     
     &:nth-last-child(-n+3) {
+        @include mq(desktop) {
             margin-bottom: 0;
+            }
+            
         }
+    &:nth-last-child(-n+2) {
+            @media screen and (min-width:768px) and (max-width:1199.9px) {
+                 margin-bottom: 0;
+             }
+    
+         }
+
+      
        
 }
 
@@ -112,6 +151,7 @@
     position: relative;
     overflow: hidden;
     height: auto;
+
 }
 
 .product__photo{
@@ -142,11 +182,20 @@
     line-height: 1.55;
     color: var(--ptimary-white-color);
     padding: 63px 24px;
+
+    @include mq(tablet) {
+        padding:39px 24px 77px 24px;
+    }
+    
+    @include mq(desktop) {
+        padding: 77px 24px;
+    }
 }
 
 .product__inform {
     padding-right: 24px;
     padding-left: 24px;
+    
 }
 
 .product__title {
@@ -157,6 +206,7 @@
     padding-top: 20px;
     margin-top: 0;
     margin-bottom: 4px;
+
 }
 
 .product__text {
@@ -165,4 +215,5 @@
     margin-top: 0;
     margin-bottom: 0;
     color: var(--primary-text-color);
+
 }
