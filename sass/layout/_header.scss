@@ -1,16 +1,28 @@
   .page-header {
       border-bottom: 1px solid #ECECEC;
+     
   }
 
   .main-nav {
       display: flex;
       align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
   }
 
   /* site-nav */
   .site-nav {
-      display: flex;
-      margin-left: 88px;
+    @media screen  and (max-width:767.9px) {
+        display: none;
+    }
+    
+
+    @include mq(tablet) {
+        display: flex;
+        margin-left: 88px;
+    }
+      
 
       @include mq(desktop){
         margin-left: 93px;
@@ -64,8 +76,12 @@
 
   /* auth-nav */
   .auth-nav {
+    @media screen and (max-width:767.9px) {
+        display: none;
+    }
+  
       display: flex;
-    flex-wrap: wrap;
+      flex-wrap: wrap;
       margin-left: 90px;
     @include mq(desktop) {
         margin-left: auto;
