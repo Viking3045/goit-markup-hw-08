@@ -5,6 +5,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
 
+
     max-width: 480px;
     min-height: 400px;
     background-color: #C4C4C4;
@@ -60,12 +61,12 @@
     margin-top: 0;
     margin-bottom: 30px;
     color: #fff;
-    font-style: 400;
+    letter-spacing: 0.06em;
+    font-style: normal;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
 
-    
      @include mq(desktop) {
         font-size: 44px;
         line-height: 1.36;

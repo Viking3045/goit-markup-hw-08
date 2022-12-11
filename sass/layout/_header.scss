@@ -9,6 +9,11 @@
       padding-top: 10px;
       padding-bottom: 10px;
 
+      @include mq (tablet){
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
   }
 
   /* site-nav */
